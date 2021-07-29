@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tax</string>
+    <string name="amount">Amount</string>
+    <string name="enter_your_income">Enter your Income:</string>
+    <string name="name">Name</string>
+    <string name="age_80"><![CDATA[Age<80]]></string>
+    <string name="age_60_80"><![CDATA[Age 60>80]]></string>
+</resources>

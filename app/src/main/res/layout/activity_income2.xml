@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.tax.MainActivity">
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginBottom="34dp"
+            android:text="Enter Your Age:"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/text1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/edit3" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:text=" Tuition fees paid for children"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:labelFor="@id/edit1"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toEndOf="@+id/text1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.108"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="145dp"
+            android:layout_marginBottom="40dp"
+            android:text="Enter your Income From Salary:"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="139dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="40dp"
+            android:text="Calculate"
+            app:layout_constraintBottom_toTopOf="@+id/text2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="409dp"
+            android:layout_height="306dp"
+            android:layout_marginBottom="136dp"
+            android:fontFamily="monospace"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:text="Income From House Property"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:text="Income From Other Source"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:text="Profit Gains"
+            android:textColor="#0E0101"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:text="Deduction"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:text="Life Insurance Premium Paid"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:text="Life Insurance Premium Paid" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="209dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:text="Re-payment of Housing loan"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="209dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:text="5 Years fixed deposit with PO or Schedule Bank"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/edit1" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="37dp"
+            android:width="147dp"
+            android:height="47dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/edit2" />
+
+        <EditText
+            android:id="@+id/edit5"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="111dp"
+            android:width="147dp"
+            android:height="47dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/edit4" />
+
+        <EditText
+            android:id="@+id/edit6"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="35dp"
+            android:width="147dp"
+            android:height="47dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/edit5" />
+
+        <EditText
+            android:id="@+id/edit7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:width="147dp"
+            android:height="47dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/edit6" />
+
+        <EditText
+            android:id="@+id/edit8"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="41dp"
+            android:width="147dp"
+            android:height="47dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/edit7" />
+
+        <EditText
+            android:id="@+id/b"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="33dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/edit1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="139dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="40dp"
+            android:text="View Data"
+            app:layout_constraintBottom_toTopOf="@+id/text2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="19dp"
+            android:text="Save Result"
+            app:layout_constraintBottom_toBottomOf="@+id/button3"
+            app:layout_constraintEnd_toStartOf="@+id/button4"
+            app:layout_constraintStart_toEndOf="@+id/button3"
+            app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
